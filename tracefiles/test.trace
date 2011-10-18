@@ -1,0 +1,12 @@
+16   (blocks in total)
+8    (block size)
+4l    (depends on which run)
+v    (switch on line by line explanation)
+l 17
+l 29
+s 17
+l 25
+l 35
+s 29
+p    (print out the cache contents)
+h    (print out the hit rate)

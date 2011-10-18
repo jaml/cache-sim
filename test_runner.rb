@@ -11,6 +11,11 @@ def run_test block_size, word_size, type, loop_size
   puts "#{loop_size} | #{unfused_output} | #{fused_output}"
 end
 
+if ARGV.length != 3
+  puts "Usage: ruby test_runner.rb BLOCK-SIZE WORD-SIZE CACHE-TYPE"
+  exit
+end
+
 LOOPS.each do |i|
   run_test ARGV[0], ARGV[1], ARGV[2], i
 end

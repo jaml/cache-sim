@@ -53,6 +53,14 @@ NB. We do not specify the actual data value being written, nor the register bein
 (c) “h” indicating that the hit-rate achieved so far should be output
 For example, the following trace file indicates that the simulated cache has 8 words per block, and 16 blocks organised in a direct mapping (otherwise known as “1-way associative”). There is a sequence of six accesses of which the first three must be explained line by line in the output. The cache contents are printed after the fifth access and the hit rate is printed at the end.
 
+#### Cache Types
+
+* 1 - Direct Mapped Cache
+* 2r - Two-way Associative Cache (Random Removal)
+* 2l - Two-way Associative Cache (Least Recently Used Removal)
+* 4r - Four-way Associative Cache (Random Removal)
+* 4l - Four-way Associative Cache (Least Recently Used Removal)
+
 #### Example
 
 ```
